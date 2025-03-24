@@ -147,8 +147,7 @@ const Index = () => {
                 </div>
               </div>
               
-              <div className="flex justify-between flex-wrap gap-3">
-                <RetroButton variant="default">Explore Features</RetroButton>
+              <div className="flex justify-center">
                 <RetroButton variant="primary">Try Free Demo</RetroButton>
               </div>
             </div>
