@@ -1,13 +1,14 @@
-
 import React, { useEffect, useState, useRef } from "react";
 import RetroWindow from "@/components/RetroWindow";
 import RetroButton from "@/components/RetroButton";
+import DemoRequestForm from "@/components/DemoRequestForm";
 import { applyCRTEffect } from "@/utils/noise";
 import { Terminal, AlertTriangle } from "lucide-react";
 
 const Index = () => {
   const [bootSequence, setBootSequence] = useState(true);
   const [bootStep, setBootStep] = useState(0);
+  const [demoFormOpen, setDemoFormOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const [typedText, setTypedText] = useState("");
   const fullText = "WorksWise.ai - We deliver the real work.";
@@ -149,7 +150,9 @@ const Index = () => {
               </div>
               
               <div className="flex justify-center">
-                <RetroButton variant="primary">Try Free Demo</RetroButton>
+                <RetroButton variant="primary" onClick={() => setDemoFormOpen(true)}>
+                  Try Free Demo
+                </RetroButton>
               </div>
             </div>
             
@@ -165,6 +168,8 @@ const Index = () => {
           <p className="text-retro-window-dark mt-1">Memory Available: 638K of 640K</p>
         </footer>
       </div>
+
+      <DemoRequestForm open={demoFormOpen} onOpenChange={setDemoFormOpen} />
     </div>
   );
 };
