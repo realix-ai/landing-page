@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState, useRef } from "react";
 import RetroWindow from "@/components/RetroWindow";
 import RetroButton from "@/components/RetroButton";
@@ -138,8 +139,8 @@ const Index = () => {
                   <p className="text-retro-text-dark mb-1">&gt; Generate a due diligence report for Company A</p>
                   <div className="pl-2 mb-1 text-green-700">
                     <p>Working...</p>
-                    <p>Analyzing financial statements...</p>
-                    <p>Reviewing legal documents...</p>
+                    <p>Analyzing financial statements from imanage...</p>
+                    <p>Reviewing legal documents and doing legal research...</p>
                     <p>Checking regulatory compliance...</p>
                     <p className="text-green-900 font-bold">Report complete! (2.3 seconds)</p>
                   </div>
