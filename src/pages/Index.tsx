@@ -140,7 +140,7 @@ const Index = () => {
                   <div className="pl-2 mb-1 text-green-700">
                     <p>Working...</p>
                     <p>Analyzing financial statements from imanage...</p>
-                    <p>Reviewing legal documents and doing legal research...</p>
+                    <p>Reviewing legal documents...</p>
                     <p>Checking regulatory compliance...</p>
                     <p className="text-green-900 font-bold">Report complete! (2.3 seconds)</p>
                   </div>
